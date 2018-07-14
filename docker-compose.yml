@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  projectdn:
+    image: ${DOCKER_REGISTRY}projectdn
+    build:
+      context: .
+      dockerfile: ProjectDN/Dockerfile
