@@ -6,3 +6,10 @@ services:
     build:
       context: .
       dockerfile: ProjectDN/Dockerfile
+
+  projectdnmain:
+    image: ${DOCKER_REGISTRY}projectdnmain
+    build:
+      context: .
+      dockerfile: ProjectDNMain/Dockerfile
+
